@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    cursor: crosshair;
+    background-color: #3d3d3d;
+}
+
+html{
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+h1{
+    font-size: 90px;
+    color: #dac445;
+}
+
+h3{
+    font-size: 50px;
+    color: #fff;
+}
+
+.saludo{
+    margin-top: 120px;
+    margin-left: 130px;
+}
+
+.saludo img{
+    height: 50px;
+}
+
+.saludo button{
+    margin-left: 350px;
+    border-radius: 20px;
+}
+
+header button{
+    color: #fff;
+    margin-top: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+    background-color: #000;
+    height: 40px;
+    width: 150px;
+    border-radius: 30px;
+    transition: 400ms all ease-in;
+}
+
+.email{
+    margin-top: 30px;
+    margin-right: 20px;
+    float: right;
+}
+
+.email img{
+    height: 30px;
+}
+
+.email button{
+    color: #fff;
+    cursor: pointer;
+    background-color: #000;
+    height: 40px;
+    width: 150px;
+    border-radius: 30px;
+    transition: 400ms all ease-in;
+}
+
+.email button:hover{
+    transform: translateY(-3%);
+    background-color: #3d3d3d;
+}
+
+header img{
+    width: 10px;
+}
+
+header button:hover{
+    transform: translateY(-3%);
+    background-color: #3d3d3d;
+}
+
+.chat-container {
+    max-width: 600px;
+    float: right;
+    margin-top: -10%;
+    margin-right: 140px;
+}
+
+.message {
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin: 10px 0;
+    position: relative;
+    line-height: 1.5;
+}
+
+.sender {
+    background-color: #007bff; /* Blue for sender */
+    color: white;
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+.message:after {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 10px;
+    border-width: 10px;
+    border-style: solid;
+}
+
+.sender:after {
+    border-color: transparent transparent #007bff transparent;
+    left: auto;
+    right: 10px;
+}
+
+.receiver {
+    margin-top: 90px;
+    background-color: #e5e5ea; /* Light gray for receiver */
+    color: black;
+    align-self: flex-start;
+}
+
+.receiver:after {
+    border-color: transparent transparent #e5e5ea transparent;
+    left: 10px;
+}
+
+
+.sobre{
+    text-align: center;
+    margin-left: 130px;
+}
+
+.sobre h3{
+    color: #dac445;
+}
+
+.sobre h4{
+    color: #fff;
+    margin-top: 0;
+    font-size: x-large;
+}
+
+.lenguajes{
+    text-align: center;
+    margin-top: 120px;
+    margin-left: 130px;
+}
+
+.lenguajes h3{
+    color: #dac445;
+}
+
+.lenguajes img{
+    width: 500px;
+    margin-left: 100px;
+}
+
+.aprendiendo{
+    margin-top: 120px;
+}
+
+.aprendiendo img{
+    width: 300px;
+}
+
+.boton-up{
+    margin-top: 70px;
+}
+
+.boton-up img{
+    height: 50px;
+}
+
+.boton-up button{
+    float: right;
+    border-radius: 20px;
+}
+
+#animatedWord {
+    font-size: 4em;
+    opacity: 0; /* Start as invisible */
+    transform: translateY(-50px); /* Start above its position */
+    transition: opacity 2s ease, transform 2s ease; /* Transition for opacity and transform */
+}
+
+#animatedWord.visible {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move to original position */
+}
+
+#animatedWord2 {
+    font-size: 2em;
+    opacity: 0; /* Start as invisible */
+    transform: translateY(-50px); /* Start above its position */
+    transition: opacity 3s ease, transform 3s ease; /* Transition for opacity and transform */
+}
+
+#animatedWord2.visible {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move to original position */
+}
+
+@media (min-width: 400px) and (max-width: 760px) {
+    html{
+        overflow: hidden;
+    }
+    
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    h1{
+        font-size: 90px;
+        color: #dac445;
+    }
+    
+    h3{
+        font-size: 50px;
+        color: #fff;
+    }
+    
+    .saludo{
+        margin-top: 120px;
+        margin-left: 130px;
+    }
+    
+    .saludo img{
+        height: 50px;
+    }
+    
+    .saludo button{
+        margin-left: 350px;
+        border-radius: 20px;
+    }
+    
+    header button{
+        color: #fff;
+        margin-top: 30px;
+        margin-left: 20px;
+        cursor: pointer;
+        background-color: #000;
+        height: 40px;
+        width: 150px;
+        border-radius: 30px;
+        transition: 400ms all ease-in;
+    }
+    
+    .email{
+        float: right;
+    }
+    
+    .email img{
+        height: 30px;
+    }
+    
+    .email button{
+        color: #fff;
+        cursor: pointer;
+        background-color: #000;
+        height: 40px;
+        width: 150px;
+        border-radius: 30px;
+        transition: 400ms all ease-in;
+    }
+    
+    .email button:hover{
+        transform: translateY(-3%);
+        background-color: #3d3d3d;
+    }
+    
+    header img{
+        width: 10px;
+    }
+    
+    header button:hover{
+        transform: translateY(-3%);
+        background-color: #3d3d3d;
+    }
+    
+    .chat-container {
+        max-width: 600px;
+        float: right;
+        margin-top: -10%;
+        margin-right: 140px;
+    }
+    
+    .message {
+        padding: 10px 15px;
+        border-radius: 10px;
+        margin: 10px 0;
+        position: relative;
+        line-height: 1.5;
+    }
+    
+    .sender {
+        background-color: #007bff; /* Blue for sender */
+        color: white;
+        align-self: flex-end;
+        margin-left: auto;
+    }
+    
+    .message:after {
+        content: '';
+        position: absolute;
+        bottom: 100%;
+        left: 10px;
+        border-width: 10px;
+        border-style: solid;
+    }
+    
+    .sender:after {
+        border-color: transparent transparent #007bff transparent;
+        left: auto;
+        right: 10px;
+    }
+    
+    .receiver {
+        margin-top: 90px;
+        background-color: #e5e5ea; /* Light gray for receiver */
+        color: black;
+        align-self: flex-start;
+    }
+    
+    .receiver:after {
+        border-color: transparent transparent #e5e5ea transparent;
+        left: 10px;
+    }
+    
+    
+    .sobre{
+        text-align: center;
+        margin-left: 130px;
+    }
+    
+    .sobre h3{
+        color: #dac445;
+    }
+    
+    .sobre h4{
+        color: #fff;
+        margin-top: 0;
+        font-size: x-large;
+    }
+    
+    .lenguajes{
+        text-align: center;
+        margin-top: 120px;
+        margin-left: 130px;
+    }
+    
+    .lenguajes h3{
+        color: #dac445;
+    }
+    
+    .lenguajes img{
+        width: 500px;
+        margin-left: 100px;
+    }
+    
+    .aprendiendo{
+        margin-top: 120px;
+    }
+    
+    .aprendiendo img{
+        width: 300px;
+    }
+    
+    .boton-up{
+        margin-top: 70px;
+    }
+    
+    .boton-up img{
+        height: 50px;
+    }
+    
+    .boton-up button{
+        float: right;
+        border-radius: 20px;
+    }
+    
+    #animatedWord {
+        font-size: 4em;
+        opacity: 0; /* Start as invisible */
+        transform: translateY(-50px); /* Start above its position */
+        transition: opacity 2s ease, transform 2s ease; /* Transition for opacity and transform */
+    }
+    
+    #animatedWord.visible {
+        opacity: 1; /* Fully visible */
+        transform: translateY(0); /* Move to original position */
+    }
+    
+    #animatedWord2 {
+        font-size: 2em;
+        opacity: 0; /* Start as invisible */
+        transform: translateY(-50px); /* Start above its position */
+        transition: opacity 3s ease, transform 3s ease; /* Transition for opacity and transform */
+    }
+    
+    #animatedWord2.visible {
+        opacity: 1; /* Fully visible */
+        transform: translateY(0); /* Move to original position */
+    }
+}
+
