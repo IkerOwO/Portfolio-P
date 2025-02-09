@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-*{
+:root{
+    background-color: #212830;
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -8,7 +9,6 @@ body{
     margin: auto;
     padding: auto;
     cursor: crosshair;
-    background-color: #3d3d3d;
 }
 
 html{
@@ -30,6 +30,34 @@ h3{
     color: #fff;
 }
 
+.searchBar input{
+    background-color: #c5c5c5;
+    color: #000;
+    height: 20px;
+    border-radius: 10px;
+    margin-top: 0px;
+    margin-left: 60px;
+}
+
+.searchBar button{
+    margin-left: 10px;
+    margin-right: 20px;
+    border-radius: 20px;
+    border: 1px;
+    height: 30px;
+    width: 40px;
+    cursor: pointer;
+    transition: all 300ms ease-in;
+}
+
+.searchBar button:hover{
+    background-color: #0f4e91;
+}
+
+.main{
+    display: block;
+}
+
 .saludo{
     margin-top: 120px;
     margin-left: 130px;
@@ -40,49 +68,28 @@ h3{
 }
 
 .saludo button{
+    cursor: pointer;
+    border: 0;
     margin-left: 350px;
     border-radius: 20px;
+    transition: all 300ms ease-in;
+}
+
+.saludo button:hover{
+    background-color: #0f4e91;
 }
 
 header button{
     color: #fff;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-left: 20px;
     cursor: pointer;
-    background-color: #000;
+    background-color: #2b2b2b;
     height: 40px;
-    width: 150px;
+    width: 100px;
+    border: 0;
     border-radius: 30px;
     transition: 400ms all ease-in;
-}
-
-.email{
-    margin-top: 30px;
-    margin-right: 20px;
-    float: right;
-}
-
-.email img{
-    height: 30px;
-}
-
-.email button{
-    color: #fff;
-    cursor: pointer;
-    background-color: #000;
-    height: 40px;
-    width: 150px;
-    border-radius: 30px;
-    transition: 400ms all ease-in;
-}
-
-.email button:hover{
-    transform: translateY(-3%);
-    background-color: #3d3d3d;
-}
-
-header img{
-    width: 10px;
 }
 
 header button:hover{
@@ -140,6 +147,11 @@ header button:hover{
 }
 
 
+
+.hidden{
+    display: none;
+}
+
 .sobre{
     text-align: center;
     margin-left: 130px;
@@ -166,7 +178,7 @@ header button:hover{
 }
 
 .lenguajes img{
-    width: 500px;
+    width: 250px;
     margin-left: 100px;
 }
 
@@ -187,8 +199,15 @@ header button:hover{
 }
 
 .boton-up button{
+    cursor: pointer;
+    border: 0;
     float: right;
     border-radius: 20px;
+    transition: all 300ms ease-in;
+}
+
+.boton-up button:hover{
+    background-color: #0f4e91;
 }
 
 #animatedWord {

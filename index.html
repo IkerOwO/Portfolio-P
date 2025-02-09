@@ -3,62 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="public/icons/database.svg" type="svg">
+    <link rel="icon" href="public/img/icon.png" type="png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="src/style.css">
     <title>Portfolio</title>
 </head>
 <body>
-    <div class="email">
-      <a href="mailto:erdociainiker@gmail.com"><button>Email</button></a>
-    </div>
+    <div id="hola"></div>
+    <!-- Searchbar -->
+    <div class="searchBar" style="float: right; margin-top: 10px;">
+            <input type="text" id="secret" placeholder="Type Secret">
+            <button id="send"><i class="fa fa-arrow-up"></i></button>
+        </div>
+<!-- Header -->
     <header>
-    <a href="https://github.com/IkerOwO" target="_blank"><button id="git">See on Github <img src="public/icons/github-mark.svg" alt="git-cat"></button></a>
-    </header>
-
+    <button id="git"><a href="https://github.com/IkerOwO" target="_blank"><i class="fa fa-github"></i> Github</a></button>
+    <button><a href="mailto:erdociainiker@gmail.com"><i class="fa fa-envelope"></i> Email</a></button>
+</header>
+<!-- Main Container -->
+    <div class="main">
     <div class="saludo" id="saludo">
-        <h1 id="animatedWord">Buenas, Soy Iker 👋🏻</h1>
+        <h1 id="animatedWord">Hi, I'm Iker 👋🏻</h1>
         <div class="info">
-            <h3 id="animatedWord2">Soy un Programador de Back-End</h3>
+            <h3 id="animatedWord2">A <span style="color: aqua;">Back-End</span> Developer</h3>
     </div>
     <div class="boton">
         <button id="scrollButton"><img src="public/icons/arrow-down.svg" alt=""></button>
     </div>
+    <h2 id="secretText" class="hidden" style="font-size: 2rem; color: aliceblue;">You've found the <span style="color: aqua;">secret</span> :3</h2>
 </div>
-
+<!-- Chat Container -->
 <div class="chat-container">
 <div class="message sender">
-    <p>¿Te has pasado por mi perfil de Github?</p>
+    <p>Have you checked my Github Profile</p>
  </div>
  <div class="message receiver">
-    <p>Si quieres ver mis Proyectos allí se encuentran :)</p>
+    <p>If you want to see my proyects, go there :3</p>
 </div>
 </div>
-
 <div style="height: 800px; color: #2E3234;">
-    <h2></h2>
 </div>
-
+<!-- About me  -->
 <div class="sobre" id="sobre">
-    <h3>Sobre mi</h3>
-    <h4>Programador De BackEnd con Conocimientos sobre HTML, CSS y SQL
+    <h3>About Me</h3>
+    <h4>Back-End Developer that also knows HTML, CSS and SQL
         <br>
         <br>
-        Tengo Un B2 Certificado de Cambridge
+        I have a B2 Cambridge Certificate
     </h4>
 </div>
-
+<!-- Languages -->
 <div class="lenguajes">
-    <h3>Lenguajes que utilizo</h3>
+    <h3>Languages that i use</h3>
     <img src="https://skillicons.dev/icons?i=js,cpp,py,mysql,](https://skillicons.dev)" />
     <div class="aprendiendo">
-        <h3>Lenguajes que estoy Aprendiendo</h3>
-        <img src="https://skillicons.dev/icons?i=java,](https://skillicons.dev)" />
+        <h3>Languages that I'm learning</h3>
+        <img src="https://skillicons.dev/icons?i=rust,java,](https://skillicons.dev)" />
     </div>
 </div>
 <div class="boton-up">
     <button id="scrollupButton"><img src="public/icons/arrow-up.svg" alt=""></button>
     </div>
-
+</div>
+<div id="adios"></div>
 </body>
 <script src="src/index.js"></script>
 </html>
